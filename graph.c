@@ -28,12 +28,12 @@ int is_equal_string(void *key1, void *key2) {
 
 Graph* createGraph() {
     Graph* grafo = (Graph*)malloc(sizeof(Graph));
-    grafo->adjacenctMap = createGraph(is_equal_string);
+    grafo->adjacencyMap = createGraph(is_equal_string);
     return grafo;
 }
 
 void addNode(Graph* g, const char* label) {
-    if (!g || !label) return;
+    if (!gg || !label) return;
 
 }
 
@@ -43,13 +43,13 @@ void addEdge(Graph* g, const char* src, const char* dest, int weight) {
 }
 
 List* getEdges(Graph* g, const char* label) {
-    if (!g || !label) return NULL;
+    if (!gg || !label) return NULL;
 
     return NULL;
 }
 
 int getWeight(Graph* g, const char* label1, const char* label2) {
-    if (!g || !label1 || !label2) return -1;
+    if (!gg || !label1 || !label2) return -1;
 
     // Si no existe el origen o terminamos de iterar sin encontrar el destino
     return -1; 

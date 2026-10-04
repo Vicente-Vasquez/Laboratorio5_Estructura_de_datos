@@ -63,3 +63,34 @@ graph.c:41:10: error: ‘gg’ undeclared (first use in this function); did you 
       |          g
 graph.c:41:10: note: each undeclared identifier is reported only once for each function it appears in
 030265b
+Sun Oct  4 02:26:37 AM UTC 2026: 
+ graph.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+Compilation failed
+In file included from test.c:5:
+graph.c: In function ‘createGraph’:
+graph.c:31:25: error: assignment to ‘Map *’ from incompatible pointer type ‘Graph *’ [-Wincompatible-pointer-types]
+   31 |     grafo->adjacencyMap = createGraph(is_equal_string);
+      |                         ^
+graph.c: In function ‘addNode’:
+graph.c:36:10: error: ‘gg’ undeclared (first use in this function); did you mean ‘g’?
+   36 |     if (!gg || !label) return;
+      |          ^~
+      |          g
+graph.c:36:10: note: each undeclared identifier is reported only once for each function it appears in
+graph.c: In function ‘addEdge’:
+graph.c:41:10: error: ‘gg’ undeclared (first use in this function); did you mean ‘g’?
+   41 |     if (!gg || !src || !dest) return;
+      |          ^~
+      |          g
+graph.c: In function ‘getEdges’:
+graph.c:46:10: error: ‘gg’ undeclared (first use in this function); did you mean ‘g’?
+   46 |     if (!gg || !label) return NULL;
+      |          ^~
+      |          g
+graph.c: In function ‘getWeight’:
+graph.c:52:10: error: ‘gg’ undeclared (first use in this function); did you mean ‘g’?
+   52 |     if (!gg || !label1 || !label2) return -1;
+      |          ^~
+      |          g
+e039b08
