@@ -10,3 +10,27 @@ Sun Oct  4 01:51:56 AM UTC 2026:
  tests:  0|6
 ========================================
 806ae9b
+Sun Oct  4 02:20:05 AM UTC 2026: 
+ graph.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+graph.c: In function ‘createGraph’:
+graph.c:31:5: error: expected ‘,’ or ‘;’ before ‘return’
+   31 |     return grafo;
+      |     ^~~~~~
+graph.c:30:12: error: unused variable ‘grafo’ [-Werror=unused-variable]
+   30 |     Graph* grafo = (Graph*)malloc(sizeof(Graph))
+      |            ^~~~~
+graph.c: In function ‘addEdge’:
+graph.c:40:10: error: ‘gg’ undeclared (first use in this function); did you mean ‘g’?
+   40 |     if (!gg || !src || !dest) return;
+      |          ^~
+      |          g
+graph.c:40:10: note: each undeclared identifier is reported only once for each function it appears in
+graph.c: In function ‘createGraph’:
+graph.c:32:1: error: control reaches end of non-void function [-Werror=return-type]
+   32 | }
+      | ^
+cc1: all warnings being treated as errors
+75d6fdb
