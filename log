@@ -34,3 +34,15 @@ graph.c:32:1: error: control reaches end of non-void function [-Werror=return-ty
       | ^
 cc1: all warnings being treated as errors
 75d6fdb
+Sun Oct  4 02:21:22 AM UTC 2026: 
+ graph.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+graph.c: In function ‘addEdge’:
+graph.c:40:10: error: ‘gg’ undeclared (first use in this function); did you mean ‘g’?
+   40 |     if (!gg || !src || !dest) return;
+      |          ^~
+      |          g
+graph.c:40:10: note: each undeclared identifier is reported only once for each function it appears in
+8acf0ae
